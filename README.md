@@ -61,7 +61,17 @@ This code supports the reproducibility of the experiment submitted to IntRob'26.
 
 ## Citation
 
-Arafat, M. E., Fan, S., Koren, I., & Orosz, T. (2026). Causal Rule Discovery for Compliance Improvement in Procurement Logs: A Case Study. In Proceedings of Intelligent Robotics FAIR 2026 (IntRob’26). ACM, Budapest, Hungary. 7 pages.
+```bibtex
+@incollection{arafat2026causal,
+  title={Causal Rule Discovery for Compliance Improvement in Procurement Logs: A Case Study},
+  author={Arafat, Md Easin and Fan, Shengjie and Koren, Istv{\'a}n and Orosz, Tam{\'a}s},
+  booktitle={Proceedings of Intelligent Robotics FAIR 2026 (IntRob'26)},
+  pages={1--7},
+  year={2026},
+  publisher={ACM},
+  address={Budapest, Hungary}
+}
+```
 
 ## Conference
 
