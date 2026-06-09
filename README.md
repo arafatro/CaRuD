@@ -1,63 +1,73 @@
-# Causal Rule Discovery for Compliance Improvement in Procurement Logs: A Case Study
+# CaRuD
 
-This repository is intended for reproducibility only. It provides the code and data processing steps needed to reproduce the experiments for the submitted paper.
+Reproducible code for the paper "Causal Rule Discovery for Compliance Improvement in Procurement Logs: A Case Study" submitted to IntRob'26.
 
-## Reproducibility instructions
+## Repository
 
-### 1. Install dependencies
+- GitHub: https://github.com/arafatro/CaRuD
+- Paper: IntRob'26 (Intelligent Robotics FAIR 2026)
+- Focus: reproducibility of causal rule discovery experiments on the BPI Challenge 2019 Purchase-to-Pay log
 
-```powershell
+## Getting Started
+
+### Prerequisites
+
+- Python 3.8 or newer
+- `pip`
+- Git with Git LFS enabled for large data files
+
+### Install dependencies
+
+```bash
 pip install -r requirements.txt
 ```
 
-### 2. Convert the event log (if needed)
+## Reproducibility workflow
 
-If you have the raw XES file, convert it to CSV:
+### 1. Convert the raw event log
 
-```powershell
+If you have the raw XES file, convert it to CSV first:
+
+```bash
 python src/convert_xes_to_csv.py --input data/BPI_Challenge_2019.xes --output data/BPI_Challenge_2019.csv
 ```
 
-### 3. Preprocess the data
+If you already have `data/BPI_Challenge_2019.csv`, skip this step.
 
-```powershell
+### 2. Preprocess the dataset
+
+```bash
 python src/data_prep_chunked.py --input data/BPI_Challenge_2019.csv --output data/processed_data.csv
 ```
 
-This produces the case-level dataset and labels used for causal rule discovery.
+This generates the case-level dataset used for action rule mining and uplift modelling.
 
-### 4. Mine candidate action rules
+### 3. Mine action rules
 
-```powershell
+```bash
 python src/action_rules.py --input data/processed_data.csv --output data/action_rules.csv
 ```
 
-### 5. Estimate causal uplift
+### 4. Estimate causal uplift
 
-```powershell
+```bash
 python src/uplift_tree.py --input data/processed_data.csv --rules data/action_rules.csv --output data/uplift_results.csv
 ```
 
-### 6. Check outputs
+### 5. Review results
 
-The main output files are:
+Check the produced files:
 
 - `data/processed_data.csv`
 - `data/action_rules.csv`
 - `data/uplift_results.csv`
 
-## Files used for reproduction
+## Repository structure
 
-- `src/convert_xes_to_csv.py`
-- `src/data_prep_chunked.py`
-- `src/action_rules.py`
-- `src/uplift_tree.py`
-- `data/` (BPI 2019 input files)
-- `requirements.txt`
-
-## Publication note
-
-This code supports the reproducibility of the experiment submitted to IntRob'26.
+- `src/` — code for conversion, preprocessing, rule mining, uplift modelling, and log processing
+- `data/` — dataset files used in the experiments
+- `requirements.txt` — Python dependencies
+- `README.md` — reproduction instructions and citation
 
 ## Citation
 
