@@ -1,0 +1,2 @@
+data/BPI_Challenge_2019.csv filter=lfs diff=lfs merge=lfs -text
+data/BPI_Challenge_2019.xes filter=lfs diff=lfs merge=lfs -text
