@@ -58,3 +58,9 @@ The main output files are:
 ## Publication note
 
 This code supports the reproducibility of the experiment submitted to IntRob'26.
+
+Reference:
+
+Md Easin Arafat, Shengjie Fan, István Koren, and Tamás Orosz. 2026. Causal Rule Discovery for Compliance Improvement in Procurement Logs: A Case Study. In Proceedings of Intelligent Robotics FAIR 2026 (IntRob’26). ACM, Budapest, Hungary, 7 pages.
+
+IntRob’26, June 18–20, 2026, Budapest, Hungary
