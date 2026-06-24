@@ -1,6 +1,6 @@
 # CaRuD
 
-Reproducible code for the paper "Causal Rule Discovery for Compliance Improvement in Procurement Logs: A Case Study" submitted to IntRob'26.
+Reproducible code for the paper "Causal Rule Discovery for Compliance Improvement in Procurement Logs: A Case Study" accepted to IntRob'26.
 
 ## Repository
 
