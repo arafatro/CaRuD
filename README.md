@@ -74,12 +74,10 @@ Check the produced files:
 ```bibtex
 @incollection{arafat2026causal,
   title={Causal Rule Discovery for Compliance Improvement in Procurement Logs: A Case Study},
-  author={Arafat, Md Easin and Fan, Shengjie and Koren, Istv{\'a}n and Orosz, Tam{\'a}s},
-  booktitle={Proceedings of Intelligent Robotics FAIR 2026 (IntRob'26)},
-  pages={1--7},
-  year={2026},
-  publisher={ACM},
-  address={Budapest, Hungary}
+  author={Arafat, Md Easin and Shengjie, Fan and Koren, Istv{\'a}n and Orosz, Tam{\'a}s},
+  booktitle={Proceedings of the Intelligent Robotics FAIR 2026},
+  pages={125--131},
+  year={2026}
 }
 ```
 
